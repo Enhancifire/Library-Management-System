@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+}
+h1 {
+  align-content: center;
+  color: #ffffff;
+  font-size: 70px;
+  text-align: center;
+  padding: 10px;
+}
+
+.search {
+  margin-top: 50px;
+  align-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search input {
+  width: 40%;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.search button {
+  font-size: 20px;
+  background-color: #69747c;
+  padding: 10px;
+}
+
+.mostpopular {
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.mostpopular hr {
+  height: 3px;
+  fill-opacity: 100;
+  background-color: #00cecb;
+}
+#mostpopheader {
+  color: #00cecb;
+  font-size: 30px;
+}
+
+.navlist ul {
+  list-style: none;
+}
+
+.navlist li {
+  /* background-color: #fff; */
+  position: relative;
+  color: aqua;
+  padding: 10px;
+  display: inline;
+}
+
+.navbarbutton {
+  background-color: #fff;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 20px;
+}

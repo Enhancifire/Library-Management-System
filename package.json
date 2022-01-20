@@ -1,0 +1,11 @@
+{
+  "name": "lms",
+  "version": "1.0.0",
+  "description": "Library Management System",
+  "main": "index.js",
+  "scripts": {
+    "test": "testit"
+  },
+  "author": "Faiz Saiyad",
+  "license": "ISC"
+}
