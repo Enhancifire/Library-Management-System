@@ -34,12 +34,12 @@ h1 {
 
 .search input {
   width: 40%;
-  font-size: 20px;
-  padding: 10px;
+  font-size: 30px;
+  padding: 12px;
 }
 
 .search button {
-  font-size: 20px;
+  font-size: 30px;
   background-color: #69747c;
   padding: 10px;
 }
@@ -56,6 +56,7 @@ h1 {
   fill-opacity: 100;
   background-color: #00cecb;
 }
+
 #mostpopheader {
   color: #00cecb;
   font-size: 30px;
