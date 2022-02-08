@@ -62,24 +62,3 @@ h1 {
   font-size: 30px;
 }
 
-.navlist ul {
-  list-style: none;
-}
-
-.navlist li {
-  /* background-color: #fff; */
-  position: relative;
-  color: aqua;
-  padding: 10px;
-  display: inline;
-}
-
-.navbarbutton {
-  background-color: #fff;
-
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: 20px;
-}

@@ -1,23 +1,19 @@
 console.log("Connectes!!");
 $(function () {
 
-    $("#fname_error_message").hide();
-    $("#lname_error_message").hide();
     $("#uname_error_message").hide();
     $("#num_error_message").hide();
     $("#email_error_message").hide();
     $("#pass_error_message").hide();
     $("#cpass_error_message").hide();
 
-    var error_fname = false;
-    var error_lname = false
     var error_uname = false;
     var error_email = false;
     var error_num = false;
     var error_pass = false;
     var error_cpass = false;
 
-    $("#username").focusout(function () {
+    $("#uname").focusout(function () {
         check_uname();
     });
     $("#email").focusout(function () {
@@ -33,10 +29,9 @@ $(function () {
         check_cpass();
     });
 
-
     function check_uname() {
         var pattern = /^[a-zA-Z0-9]*$/;
-        var uname = $("#username").val();
+        var uname = $("#uname").val();
         if (pattern.test(uname) && uname !== '') {
             $("#uname_error_message").hide();
             $("#uname").css("border-bottom", "4px solid #34F458");
@@ -98,11 +93,11 @@ $(function () {
 
     function check_cpass() {
         var pass = $("#pass").val();
-        var cpass = $("#confpass").val();
+        var cpass = $("#cpass").val();
         if (cpass == null || cpass == "") {
             $("#cpass_error_message").html("Enter Password to confirm");
             $("#cpass_error_message").show();
-            $("#cconfpass").css("border-bottom", "4px solid #F90A0A");
+            $("#cpass").css("border-bottom", "4px solid #F90A0A");
             error_cpass = true;
         }
         else if (pass !== cpass) {
@@ -117,14 +112,10 @@ $(function () {
     }
 
     $("#register").submit(function () {
-        error_fname = false;
-        error_sname = false;
         error_email = false;
         error_password = false;
         error_retype_password = false;
 
-        check_fname();
-        check_lname();
         check_uname();
         check_email();
         check_num();

@@ -1,0 +1,95 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+  </head>
+
+  <body>
+
+    <!-- <b>Registration page</b> -->
+    <div id="menu">
+      <div id="logo">LIBRARY<b style="color:#2c7ad6 ;">ZONE</b>
+      </div>
+      <div id="menu1">
+	<ul>
+	  <a href="#">
+	    <li class="fa fa-home">Home</li>
+	  </a>
+	  <a href="#">
+	    <li class="fa fa-image">Gallery</li>
+	  </a>
+	  <a href="admin.html">
+	    <li class="fa fa-user">Admin Login</li>
+	  </a>
+	  <a href="register.html">
+	    <li class="fa fa-registered">Register</li>
+	  </a>
+	  <a href="index.html">
+	    <li class="fa fa-user">Login</li>
+	  </a>
+
+	</ul>
+      </div>
+    </div>
+    <div class="register-main">
+      <form name="register" id="register">
+	<div id="l-mid">WELCOME TO LIBRARY<b style="color: #2c7ad6;">ZONE</b>
+	  <p style="font-size: 20PX;color: #0921fa; text-align: center; font-weight: bold">Hello,readers get ready
+	  to explore more!!</p>
+	</div>
+	<div class="container" id="register-page">
+	  <div class="con1">
+	    <div class="signup-head">
+	      <h1>Signup here</h1>
+	    </div>
+	    <!-- <form class="form" id="signup-form" method="post"></form> -->
+	    <div class="con2"> <input type="text" placeholder="First Name" name="fname" id="fname" required="">
+	      <span class="error_form" id="fname_error_message"></span>
+
+	    </div>
+	    <div class="con3"> <input type="text" placeholder="Last Name" name="lname" id="lname" required="">
+	      <span class="error_form" id="lname_error_message"></span>
+
+	    </div>
+	    <div class="uname"><input type="text" placeholder="Username" id="uname"></input>
+	      <span class="error_form" id="uname_error_message"></span>
+	    </div>
+	    <div class="con4"> <input type="email" placeholder="Email" name="email" id="email" required="">
+	      <span class="error_form" id="email_error_message"></span>
+
+	    </div>
+	    <div calss="con5"> <input type="phone" placeholder="Mobile Number" name="mobile_number" id="num"
+												    required="">
+	      <span class="error_form" id="num_error_message"></span>
+
+	    </div>
+	    <div calss="con6"> <input type="password" placeholder="Password" name="pass" id="pass" required="">
+	      <span class="error_form" id="pass_error_message"></span>
+
+	    </div>
+	    <div class="con7"> <input type="password" placeholder="Confirm Password" name="cpass" id="cpass"
+												  required="">
+	      <span class="error_form" id="cpass_error_message"></span>
+
+	    </div>
+
+	    <!-- <div class="con8"><button type="submit" class="btn-btn-primary"
+	      onclick="return validateUser()">Submit</button></div> -->
+	  <div class="con8"><button type="submit" class="btn-btn-primary" id="done">Submit</button></div>
+	  </div>
+	</div>
+      </form>
+
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="./validation-reg.js"></script> -->
+  <script src="./Validation-with-jquery/registration-jquery.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+
+</html>

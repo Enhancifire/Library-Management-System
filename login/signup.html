@@ -14,35 +14,41 @@
         <div>
           <input
             type="text"
-            id="username"
-            name="username"
+            id="uname"
+            name="uname"
             placeholder="Username"
           />
+	  <span class="error_form" id="uname_error_message"></span>
         </div>
 
         <div>
-          <input type="email" id="email" name="email" placeholder="Email" />
+          <input type="email" id="email" name="email" placeholder="Email" required/>
+	  <span class="error_form" id="email_error_message"></span>
         </div>
 
         <div>
-          <input type="password" id="password" name="password" placeholder="Password" />
+          <input type="password" id="pass" name="pass" placeholder="Password" required />
+	  <span class="error_form" id="pass_error_message"></span>
         </div>
 
         <div>
           <input
             type="password"
-            id="confpass"
-            name="confpass"
+            id="cpass"
+            name="cpass"
             placeholder="Confirm Password"
+	    required
           />
+	  <span class="error_form" id="cpass_error_message"></span>
         </div>
 
         <div>
-          <input type="numeric" id="cnum" name="cnum" placeholder="Number" />
+          <input type="numeric" id="num" name="num" placeholder="Number" required />
+	  <span class="error_form" id="num_error_message"></span>
         </div>
 
         <div>
-          <button type="submit">Signup</button>
+          <button type="submit" id="done">Signup</button>
         </div>
 
         <div>
@@ -50,6 +56,8 @@
         </div>
       </form>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
     <script src="registration-jquery.js">
     </script>
   </body>
